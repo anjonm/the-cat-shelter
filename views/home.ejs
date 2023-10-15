@@ -1,0 +1,72 @@
+<%- include('partials/header') %>
+
+<title>Welcom to Adopurr</title>
+</head>
+
+<body class="dis-col">
+    <!-- <main class="dis-col main-body"> -->
+    <%- include('partials/navbar') %>
+    <section class="dis-col mnbg-clr">
+        <div class="dis-col welcome-panel">
+            <div class="welcome-logo">
+                <img src="assets/welcome.png" alt="Welcome to Adopurr" class="image" />
+            </div>
+            <div class="welcome-cats">
+                <div class="wlcm-bbl">
+                    <img src="assets/bubble.png" alt="chat bubble" class="image" />
+
+                    <div class="wlcm-bbl-cntnt">
+                        <% const {cname, age, gender, color, place} = cats[0] %>
+                        <p class="txt-orange">Hi! I'm <%= cname %></p>
+                        <br>
+                        <ul>
+                            <li>
+                                <%= age %>Yrs Old
+                            </li>
+                            <li>
+                                <%= gender %>
+                            </li>
+                            <li>
+                                <%= color %>
+                            </li>
+                        </ul>
+                        <br>
+                        <p>You can find me at <span class="txt-orange"><%= place %> City!</span></p>
+                    </div>
+                </div>
+                <div class="featured-cat">
+                    <img src="assets/elioSit.jpg" alt="available cat" class="image img-border" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <img src="assets/abt-us-bg.png" class="bg-img">
+
+        <img src="assets/knowUs.png" alt="know us" class="abt-logo">
+
+        <div class="abt-cntnt">
+            <div>
+                <img src="assets/sample.jpg" alt="picture" class="abt-img">
+                <p><span>Lorem ipsum dolor sit</span></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis impedit iste eos? Facilis fugit soluta totam, vel error, molestias obcaecati, neque eum asperiores placeat nulla voluptatum doloribus tempora repellat.</p>
+            </div>
+            <div>
+                <img src="assets/sample2.jpg" alt="picture" class="abt-img">
+                <p><span>Lorem ipsum dolor sit</span></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis impedit iste eos? Facilis fugit soluta totam, vel error, molestias obcaecati, neque eum asperiores placeat nulla voluptatum doloribus tempora repellat.</p>
+            </div>
+            <div>
+                <img src="assets/sample3.jpg" alt="picture" class="abt-img">
+                <p><span>Lorem ipsum dolor sit</span></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis impedit iste eos? Facilis fugit soluta totam, vel error, molestias obcaecati, neque eum asperiores placeat nulla voluptatum doloribus tempora repellat.</p>
+            </div>
+        </div>
+    </section>
+    <!-- </main> -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>

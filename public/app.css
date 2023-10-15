@@ -1,0 +1,400 @@
+/* CSS RESET CODE */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET CODE */
+
+/* SELF CODE */
+
+/* GENERAL */
+* {
+	box-sizing: border-box;
+}
+
+input, select, textarea, button{
+	font-family:inherit;
+}
+
+html {
+	font-family: 'Anonymous Pro', monospace;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	font-size: 20px;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	max-width: 1920	px;
+}
+
+a{
+	text-decoration: none;
+	color: black
+}
+
+input, select, a{
+	text-transform: uppercase;
+}
+
+.dis-col{
+	display: flex;
+	flex-direction: column;
+}
+
+.pprcs{
+	text-transform: uppercase;
+}
+
+.image {
+	width: 100%;
+}
+
+.bg-img{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+}
+
+.dsply-hd{
+	display: none;
+}
+/* GENERAL */
+
+/* NAVBAR */
+.navbar {
+	background-color: #fbffa5;
+	width: 100%;
+	height: 60px;
+	min-height: 25px;
+	padding: 5px 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 170px;
+	min-width: 170px;
+	display: flex;
+	align-items: center;
+}
+
+.nav-btns{
+	width: 55%;
+	min-width: 570px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/* 
+.nav-btns li{
+	float: left;
+	position: relative;
+	width: auto;
+} */
+
+.nav-btns>li>a, #nav-lgn{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 5px 20px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.nav-btns>li:hover>a, #nav-lgn:hover{
+	transition: all .3s ease;
+	background-color: white;
+	color: black;
+}
+/* NAVBAR */
+
+/* HOME FEATURED CAT */
+.mnbg-clr{
+	background-color: #ff862f;
+}
+
+.txt-orange{
+	color: #ff862f;
+}
+
+section.mn-clr{
+	align-items: center;
+}
+
+.welcome-panel {
+	width: 90%;
+	align-items: center;
+	align-self: center;
+}
+
+.welcome-logo {
+	padding: 25px 0px 10px;
+	width: 40%;
+}
+
+.welcome-cats {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin-bottom: 2.5%;
+	padding: 0px 50px;
+}
+
+.wlcm-bbl {
+	display: flex;
+	max-width: 420px;
+	min-width: 420px;
+}
+
+.wlcm-bbl-cntnt{
+	position: relative;
+	top: 55px;
+	left: -360px;
+	max-height: 210px;
+	min-width: 325px;
+}
+
+p.txt-orange{
+	font-size: 2rem;
+}
+
+.wlcm-bbl-cntnt>ul{
+	list-style-type: disc;
+	list-style-position: inside;
+	padding-left: 50px;
+}
+
+.wlcm-bbl-cntnt>p:last-child{
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.featured-cat {
+	width: 700px;
+}
+
+.img-border {
+	border-radius: 30px;
+	border-bottom: 5px solid black;
+	border-right: 5px solid black;
+}
+/* HOME FEATURED CAT */
+
+/* ADOPT */
+main.adpt{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main.adpt>img.adpt-logo{
+	width: 45%;
+	margin-top: 3%;
+}
+
+main.adpt>div.mn-cntnt{
+	display: flex;
+	justify-content: space-around;
+	min-width: 80%;
+	margin-top: 30px;
+}
+
+main.adpt div.ct-dtls{
+	background-color: #eaeaea;
+	padding: 10px;
+	margin: 0px 20px 20px;
+}
+
+main.adpt img.adpt-ct{
+	width: 250px;
+	min-height: 335px;
+	object-fit: cover;
+}
+
+main.adpt div.ct-dtls>ol{
+	background-color: white;
+	position: absolute;
+	float: left;
+	bottom: 120px;
+	width: 250px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+main.adpt div.ct-dtls:hover ol{
+	display: block;
+}
+
+main.adpt div.ct-dtls>ul>li:first-child{
+	font-size: 1.5rem;
+}
+/* ADOPT */
+
+/* ABOUT US */
+#about{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#about>img.abt-logo{
+	margin-top: 40px;
+	width: 500px;
+}
+
+#about>div.abt-cntnt{
+	display: flex;
+	justify-content: space-around;
+	max-width: 85%;
+	margin-top: 50px;
+}
+
+#about>div.abt-cntnt>div{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	text-align: justify;
+}
+
+#about>div img.abt-img{
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	align-self: center;
+	border: 5px solid black;
+	border-radius: 25px;
+}
+
+#about>div.abt-cntnt>div>p>span{
+	display: block;
+	margin: 10px 0px;
+	font-size: 1.5rem;
+}
+/* ABOUT US */
+
+/* log In */
+.flt-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100vh;
+}
+
+div#logInBgB{
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+div#logInBgW{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, .125);
+}
+
+.flt-bg-frms{
+	align-items: center;
+	background-color: #fbffa5;
+	border-radius: 25px;
+}
+
+.lgn-logo{
+	width: 200px;
+	margin: 25px 0px 30px;
+}
+
+.frm>input {
+	width: 270px;
+}
+
+.frm input, .frm button, .frm select{
+	font-size: 1rem;
+	height: 40px;
+	border-radius: 25px;
+	border-color: black;
+	border-width: 4px 8px;
+	border-style: solid;
+}
+
+.frm>*{
+	width: 270px;
+	margin: 0px 20px 5px;
+}
+
+.frm input, select{
+	color: #a6a6a6;
+	padding-left: 10px;
+}
+
+.frm>div{
+	display: flex;
+	justify-content: space-between;
+}
+
+.frm>div>*{
+	width: 45%;
+}
+
+button.mnbg-clr{
+	color: white;
+	margin-top: 15px;
+}
+
+.flt-bg-frms>form+a{
+	font-size: .8rem;
+	margin: 20px 0px 15px;
+}
+
+hr{
+	width: 270px;
+	border: 0 none;
+	height: 3px;
+	background-color: #a6a6a6;
+}
+
+.flt-bg-frms>hr+a{
+	color: white;
+	background-color: black;
+	font-size: 1rem;
+	border-radius: 25px;
+	padding: 10px 20px;
+	margin: 30px 0px 20px;
+}
+/* log In */

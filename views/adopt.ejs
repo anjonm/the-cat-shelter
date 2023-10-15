@@ -1,0 +1,34 @@
+<%- include('partials/header') %>
+
+<title>Adopt Us</title>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+    <main class="adpt">
+        <img src="assets/adopur.png" class="bg-img">
+
+        <img src="assets/adopt.png" alt="Want to Adopt?" class="adpt-logo">
+
+        <div class="mn-cntnt">
+            <% for(let c of cats){ %>
+            <div class="ct-dtls">
+                <img src=" <%- c.photo %>" alt="insert photo here" class="adpt-ct">
+                <ol class="dsply-hd">
+                    <li><%- c.age %>yrs old</li>
+                    <li>Color: <%- c.color %></li>
+                    <li>Location: <%- c.place %></li>
+                </ol>
+                <ul>
+                    <li><%- c.cname %></li>
+                    <li><%- c.gender %></li>
+                </ul>
+            </div>
+            <%}%>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
